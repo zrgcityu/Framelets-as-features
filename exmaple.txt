@@ -1,0 +1,5 @@
+data = np.load(os.path.join('data', f'{name.replace("-", "_")}.npz'))
+node_features = torch.tensor(data['node_features'])
+
+data_frame = torch.tensor(np.load('2_data_frame/'+ name + '_low_var.npy'), dtype=torch.float)[:,0:2100]
+node_features = torch.cat([node_features, data_frame], axis=1)
