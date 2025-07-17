@@ -3,7 +3,7 @@ Python codes for generating 2-hop graph framelets on 3 datasets: amazon-ratings,
 
 The packages used in the conda environment for running [the implementation](https://github.com/yandex-research/heterophilous-graphs) are listed in the file "env.txt". Experiments were done with an RTX 3090 graphics card and 64 GB of RAM. Driver version: 470.239.06. CUDA version: 11.4. Ubuntu version: 20.04.5 LTS.
 
-To generate framelets for a single dataset, run the python file "2_hop_framelets.py". See actual codes for details. The random seed we used were 42 (for Table 1) and 42, 43, 44, 45 (for Table 2).
+To generate framelets for a single dataset, run the python file "2_hop_framelets.py". See actual codes for details. The random seed we used were 42 (for Table 3) and 42, 43, 44, 45 (for Figure 9).
 
 The processed graphs are stored the folder "2_hop_adj" and framelets are stored in the folder "2_hop_frame". It will take some time when running for the first time, especially for the dense graph tolokers.
 
